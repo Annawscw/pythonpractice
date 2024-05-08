@@ -5,21 +5,28 @@ name = input ("what is your name?")
 print ("Hello welcome to the quizz ", name)
 
 # ask the user a question and get their response
-answer = input ("do you think cats are cute?")
+answer = input ("do you think cats are cute?") .lower() 
 # Tell them the correct answer
-print ("The correct answer is ", answer)
-
-# a question 
-answer = input (" In 1963 did a cat go to space? ")
-# answer to the question
-if answer == "Correct":
+if answer == "yes" .lower(): 
     print("Correct")
     score += 5
 elif answer == "":
-    print ("I don't know")
+    print ("correct")
+else :
+    print("Incorrect!")
+    print ("The answer was correct")
+
+# a question 
+answer = input (" In 1963 did a cat go to space? ") .lower()
+# answer to the question
+if answer == "yes" .lower() :
+    print("Correct")
+    score += 5
+elif answer == "":
+    print ("correct")
 else :
     print("Incorrect!")
     print ("The answer was correct")
 # the end
-print ("Goodjob you got ", score, "pionts" "goodbye")
+print ("Goodjob {} got {} pionts.\ngood-bye" .format(name, score))
 
