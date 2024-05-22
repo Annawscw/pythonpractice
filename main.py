@@ -1,4 +1,4 @@
-score = 0 
+
 play = "yes"
 QUESTION_FORMAT = "{}\na:{}\nb:{}\nc:{}\nd:{}"
 
@@ -10,8 +10,22 @@ name = input ("what is your name?")
 
 print ("Hello welcome to the quizz ", name)
 
-while play == "yes":
+while True: 
+    try:
 
+        tries=input("how many trys do you wont for the question")
+        tries=int(tries)
+        break
+    except:
+        print("thats nont a number")
+
+        GOOD_COMMENTS = ["good job","keep going","you can do it", ]
+        BAD_COMMENTS = ["keep trying", "dont give up","you can do better",]
+
+
+
+while play == "yes":
+    score = 0 
     # question
 
     answer = input ("do you think cats are cute?") .lower() 
@@ -36,8 +50,10 @@ while play == "yes":
     if answer == "yes" .lower() :
         print("Correct")
         score += 5
-    elif answer == "":
+        print(random.choice(GOOD_COMMENTS[0]))
+    elif answer == "wrong":
         print ("correct")
+        print(random.choice(BAD_COMMENTS[0]))
     else :
         print("Incorrect!")
         print ("The answer was correct")
