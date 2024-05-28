@@ -1,32 +1,52 @@
+import random 
 
-play = "yes"
 QUESTION_FORMAT = "{}\na:{}\nb:{}\nc:{}\nd:{}"
 
-# ask the user their name and store it 
+GOOD_COMMENTS = ["good job","keep going","you can do it", ]
+BAD_COMMENTS = ["keep trying", "dont give up","you can do better",]
+
+QUESTIONS = ["do you think cats are cute?",
+            "In 1963 did a cat go to space?",
+            "what bread of cat is the longest?",]
+OPTIONS = [["yes", "no"]
+           ["yes","no"]
+           ["Ragdoll","Maine Coon","British Shorthair","Scottish Fold"]]
+ANSWERS = [1,1,2]
+
+play = "yes"
 
 name = input ("what is your name?")
-
-# greet user and interduce quiz
 
 print ("Hello welcome to the quizz ", name)
 
 while True: 
     try:
-
         tries=input("how many trys do you wont for the question")
         tries=int(tries)
         break
     except:
-        print("thats nont a number")
-
-        GOOD_COMMENTS = ["good job","keep going","you can do it", ]
-        BAD_COMMENTS = ["keep trying", "dont give up","you can do better",]
-
-
+        print("thats not a number")
 
 while play == "yes":
     score = 0 
     # question
+
+    for i in range (len(question)):
+        question_attempts = tries
+        while question_attempts > 0:
+            answer = input(QUESTION_FORMAT.format(QUESTIONS[i], OPTIONS[i][0], OPTIONS[i][1], OPTIONS [i][2],OPTIONS [i][3])).lower()
+
+            
+
+
+
+
+
+
+
+
+
+
 
     answer = input ("do you think cats are cute?") .lower() 
 
