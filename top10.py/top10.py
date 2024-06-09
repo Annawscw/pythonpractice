@@ -1,7 +1,7 @@
 TOP_ANIMALS_GOING_ENDANGERED = ["Avan Rhinos","Amur leopard","Sunda island tiger","mountain gorila","Tapanuli orangutan",
                                 "Yangtze Finless Porpoise","Black rhinos","African forest elephants","Sumatran orangutan","Hawksbill turtle",]
 score = 0
-while 
+
 
 #---------FUNCTIONS--------#
 
